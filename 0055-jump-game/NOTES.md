@@ -1,0 +1,4 @@
+- start from the end instead of beginning
+- check if we can reach from the current index to the last good index(index which can led us to the end)
+- if yes then update the last good index to current index
+- in the end check if last good index is the 0th index (that means there is a path from our 0th index to reach to the last index)
