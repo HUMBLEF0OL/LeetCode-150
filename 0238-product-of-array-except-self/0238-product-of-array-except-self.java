@@ -8,8 +8,7 @@ class Solution {
         }
         int result[] = new int[nums.length];
         for(int i =0;i<nums.length;i++){
-            if(zeroCount > 1) result[i] = 0;
-            else if(zeroCount == 1 && nums[i] != 0) result[i] = 0;
+            if(zeroCount > 1 || (zeroCount == 1 && nums[i] != 0)) result[i] = 0;
             else if(nums[i] == 0) result[i] = overallProduct;
             else result[i] = overallProduct/nums[i];
         }
